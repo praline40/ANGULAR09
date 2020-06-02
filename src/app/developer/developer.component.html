@@ -1,0 +1,16 @@
+<p>Bienvenu sur mon CV !</p>
+
+<div>
+    <p>Je m'appelle {{developer.firstName}} {{developer.lastName}}, j'ai {{developer.age}} ans, je suis dévelopeur.<br>
+    Je suis compétent dans ces langages:<br>
+    </p>
+   
+</div>
+
+<div *ngFor="let skill of skills" > 
+     
+    <app-skill [mySkill] = "skill" ></app-skill>
+    
+   
+</div>
+
